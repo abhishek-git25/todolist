@@ -1,7 +1,9 @@
 import React from "react";
 import { FormControl, Button, Row, Col } from "react-bootstrap";
 
-const TodoForm = ({ setNewTask, newTask, addTask, editIndex, saveEdit , editTask}) => {
+const TodoForm = ({ setNewTask, newTask, addTask, saveEdit , editTask}) => {
+
+  // reciving all the required data here using props
   return (
     <>
       <div className="w-100 mt-2 mb-2">
@@ -16,6 +18,7 @@ const TodoForm = ({ setNewTask, newTask, addTask, editIndex, saveEdit , editTask
             />
           </Col>
           <Col lg={12}>
+          {/* add and save button rendering here conditionally */}
             {editTask ? (
               <Button
                 variant="btn btn-outline-primary d-flex mx-auto mt-2"
